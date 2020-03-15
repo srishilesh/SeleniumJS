@@ -7,7 +7,7 @@ async function nonexist()
     .forBrowser('chrome')
     .build()
 
-    await driver.get('https://iris-beta.netlify.com/forgot-password')
+    await driver.get('https://nostalgic-mccarthy-58e272.netlify.com/forgot-password')
 
 
     await driver.findElement(By.name('email')).sendKeys('egayu3@gmail.com')
