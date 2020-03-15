@@ -6,7 +6,7 @@ async function scroll(){
     .forBrowser('chrome')
     .build();
    
-    await driver.get('https://iris-beta.netlify.com/profile')
+    await driver.get('https://nostalgic-mccarthy-58e272.netlify.com/profile')
 //give waitttt hereeeee
 
 setTimeout(timeout,4000);
