@@ -7,7 +7,7 @@ async function dmp()
     .forBrowser('chrome')
     .build()
 
-    await driver.get('https://iris-beta.netlify.com/profile')
+    await driver.get('https://nostalgic-mccarthy-58e272.netlify.com/profile')
 
     await(await driver.findElement(By.xpath('/html/body/div/div/div/div/div/div[1]/aside/ul/li[2]/a'))).click()
 
