@@ -6,7 +6,7 @@ async function log1(){
     .forBrowser('chrome')
     .build()
 
-    await driver.get('https://iris-beta.netlify.com/')
+    await driver.get('https://nostalgic-mccarthy-58e272.netlify.com')
 
     await driver.findElement(By.name('email')).sendKeys('saibalsu@gmail.com')
     await driver.findElement(By.name('password')).sendKeys('password123')
@@ -33,7 +33,7 @@ async function log2(){
     .forBrowser('chrome')
     .build()
 
-    await driver.get('https://iris-beta.netlify.com/')
+    await driver.get('https://nostalgic-mccarthy-58e272.netlify.com')
 
     await driver.findElement(By.name('email')).sendKeys('notexistgmail.com')
     await driver.findElement(By.name('password')).sendKeys('notexist')
@@ -61,7 +61,7 @@ async function log3(){
     .forBrowser('chrome')
     .build()
 
-    await driver.get('https://iris-beta.netlify.com/')
+    await driver.get('https://nostalgic-mccarthy-58e272.netlify.com')
 
     await driver.findElement(By.name('email')).sendKeys('notexist@gmail.com')
     await driver.findElement(By.name('password')).sendKeys('notexist')
