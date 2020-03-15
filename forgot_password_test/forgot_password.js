@@ -9,6 +9,7 @@ async function nonexist()
 
     await driver.get('https://nostalgic-mccarthy-58e272.netlify.com/forgot-password')
 
+    driver.findElement(By.xpath('//*[@id="__layout"]/div/div/div/div/div/form/div[1]/div/input')).click();
 
     await driver.findElement(By.xpath('//*[@id="__layout"]/div/div/div/div/div/form/div[1]/div/input')).sendKeys('egayu3@gmail.com')
     
