@@ -5,7 +5,7 @@ async function reg(){
     let driver=await new webdriver.Builder()
     .forBrowser('firefox')
     .build()
-    await driver.get('https://nostalgic-mccarthy-58e272.netlify.com/')
+    await driver.get('https://nostalgic-mccarthy-58e272.netlify.com/register')
     await(await driver.findElement(By.xpath('/html/body/div/div/div/div/div/div/div/div/p/a'))).click() 
 
     await driver.findElement(By.name('email')).sendKeys('prathyu03981@gmail.com')
