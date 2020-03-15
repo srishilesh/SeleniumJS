@@ -7,7 +7,7 @@ let driver =await new webdriver.Builder()
     .build();
 
 //await driver.get('https://iris-se.netlify.com/login')
-await driver.get('https://iris-beta.netlify.com/')  // changed UI
+await driver.get('https://nostalgic-mccarthy-58e272.netlify.com')  // changed UI
 //await driver.findElement(By.name('email')).sendKeys('saibalsu@gmail.com')
 await driver.findElement(By.xpath('//*[@id="__layout"]/div/div/div/div/div/form/div[1]/div/input')).sendKeys('saibalsu@gmail.com')
     await driver.findElement(By.name('password')).sendKeys('password123')
