@@ -9,14 +9,15 @@ async function nonexist()
     
    
 
-    await driver.manage().window().maximize();
+    //await driver.manage().window().maximize();
+    WebDriverWait wait = new WebDriverWait(driver, 30);
     await driver.get('https://nostalgic-mccarthy-58e272.netlify.com/forgot-password')
 
-    driver.findElement(By.xpath('//*[@id="__layout"]/div/div/div/div/div/form/div[1]/div/input')).click();
+    await wait.until(driver.findElement(By.xpath('//*[@id="__layout"]/div/div/div/div/div/form/div[1]/div/input'))).click();
 
-    await driver.findElement(By.xpath('//*[@id="__layout"]/div/div/div/div/div/form/div[1]/div/input')).sendKeys('egayu3@gmail.com')
+    await wait.until(driver.findElement(By.xpath('//*[@id="__layout"]/div/div/div/div/div/form/div[1]/div/input'))).sendKeys('egayu3@gmail.com')
     
-    await (await driver.findElement(By.xpath('//*[@id="__layout"]/div/div/div/div/div/form/div[2]/button'))).click()
+    await (await wait.until(driver.findElement(By.xpath('//*[@id="__layout"]/div/div/div/div/div/form/div[2]/button')))).click()
 
     await driver.getPageSource().then(function(content) 
 {
